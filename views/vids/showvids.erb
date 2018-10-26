@@ -1,0 +1,14 @@
+<<div class="">
+  <a href="/">Index</a>
+</div>
+<div class="">
+  <div class="">
+    <h1><%= @video[:title] %></h1>
+  </div>
+  <div class="">
+    <iframe width="560" height="315" src="<%= @video[:link]%>" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+  <div class="">
+    <p><%= @video[:description] %></p>
+  </div>
+</div>
