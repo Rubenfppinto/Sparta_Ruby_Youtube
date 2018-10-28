@@ -1,3 +1,76 @@
+/* * {
+  border: 1px solid red;
+} */
+
+/* Target selectores */
 body {
-background-color: lightgrey;
+background-color: #FFC15E;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F7B05B;
+  border-bottom: 1.5px solid #CC5803;
+  margin: -8px -8px 0px;
+  /* margin-left: -8px;
+  margin-right: -8px; */
+  padding: 10px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  background-color: #F7934C;
+  margin-left: -8px;
+  margin-right: -8px;
+  /* margin-bottom: -10px; */
+  padding: 5px 5px 5px 5px;
+}
+
+img{
+  height: 30px;
+  width: 100px;
+}
+/* ID selectors */
+#logo {
+  display: flex;
+  align-items: center;
+}
+
+#pagetitle {
+  width: 55%;
+}
+
+/* Class selectors */
+.maincontainer {
+  display: flex;
+  flex-direction: column;
+  /* height: 100vh; */
+  /* border: 1px solid red; */
+  text-align: center;
+}
+
+.contenttable {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  /* border: solid 1px red; */
+  border-bottom: 1px solid #CC5803;
+  width: 40%;
+}
+
+.headings {
+  font-size: 22px;
+}
+
+/* .menu {
+  background-color: red;
+  padding: 10px;
+  text-align: center;
+} */
+
+.description {
+  text-align: left;
+  text-align: justify;
 }

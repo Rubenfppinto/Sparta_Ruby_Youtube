@@ -1,17 +1,15 @@
-<div>
-  <a href="/">Index</a>
+<div class="menu">
+  <a href="/">Index </a>
   <% @video.each do |videos| %>
-    <a href="/<%= videos[:id] %>"><%= videos[:title] %></a>
+    | <a href="/<%= videos[:id] %>"><%= videos[:title] %></a>
   <% end %>
 </div>
-<div class="">
-  <div class="">
-    <p>Title</p>
-  </div>
-  <div class="">
-    <p>video</p>
-  </div>
-  <div class="">
-      <p>description</p>
-  </div>
+<div class="maincontainer">
+  <% @video.each do |videos| %>
+    <div class="contenttable">
+      <br><a class="headings" href="/<%= videos[:id] %>"><%= videos[:title] %></a>
+      <strong><%= videos[:sub_title] %></strong>
+      <p class="description"><%= videos[:description] %></p>
+    </div>
+  <% end %>
 </div>

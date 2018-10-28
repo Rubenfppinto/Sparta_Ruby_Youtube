@@ -2,16 +2,15 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <%# <title><%= @video[:title] %>
+    <%# </title> %>
     <link rel="stylesheet" type="text/css" href="/css/style.css">
   </head>
   <body>
     <%= erb(:'partials/nav', :layout => false) %>
-
+    
     <%= yield %>
 
     <%= erb(:'partials/footer', :layout => false) %>
   </body>
-
-
 </html>
